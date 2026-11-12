@@ -18,7 +18,7 @@ Pod의 자동 복구(Self-healing), 확장(Scaling), 로드 밸런싱(Load Balan
 ## 3. 프로젝트 구조
 
 ```text
-week09-kubernetes/
+week10-kubernetes/
 ├── README.md
 └── k8s/
     ├── deployment.yaml
@@ -39,7 +39,7 @@ week09-kubernetes/
 초기에는 복제본 2개로 배포한 뒤 Scaling 실습을 통해 3개로 확장하였다.
 
 ```bash
-kubectl apply -f week09-kubernetes/k8s/deployment.yaml
+kubectl apply -f week10-kubernetes/k8s/deployment.yaml
 kubectl get deployment guestbook
 kubectl get pods
 ```
@@ -69,7 +69,7 @@ kubectl get deployment guestbook
 - NodePort: `30080`
 
 ```bash
-kubectl apply -f week09-kubernetes/k8s/service.yaml
+kubectl apply -f week10-kubernetes/k8s/service.yaml
 kubectl get svc guestbook
 ```
 
@@ -172,7 +172,7 @@ kubectl rollout status deployment/guestbook
 - Rollout History: 배포 변경 이력 확인
 - Rollback: 이전 버전으로 복구
 
-실습 환경은 Minikube `devops09` 프로필이며, 기존 `week09-kubernetes/k8s/`의 Deployment 및 Service 설정을 활용하였다.
+실습 환경은 Minikube `devops09` 프로필이며, 기존 `week10-kubernetes/k8s/`의 Deployment 및 Service 설정을 활용하였다.
 
 ### 10.2 Deployment Scaling (3개 → 5개)
 
