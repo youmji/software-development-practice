@@ -23,7 +23,7 @@ def guestbook():
     </head>
     <body>
         <h1>InhaTC DevOps 방명록</h1>
-        <p>8주차 Kubernetes 실습</p>
+        <p>9주차 Kubernetes 실습</p>
 
         <form method="POST">
             <input name="name" placeholder="이름" required>

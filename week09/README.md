@@ -1,5 +1,5 @@
 
-# 8주차 DevOps 실습 - Kubernetes
+# 9주차 DevOps 실습 - Kubernetes
 
 ## 1. 실습 목적
 
@@ -64,7 +64,7 @@ Python Flask를 이용해 간단한 방명록 웹 애플리케이션을 제작�
 
 ```bash
 docker build -t guestbook:v1 .
-docker run -d --name week08-guestbook -p 5000:5000 guestbook:v1
+docker run -d --name week09-guestbook -p 5000:5000 guestbook:v1
 docker ps
 ```
 
